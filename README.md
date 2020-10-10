@@ -6,4 +6,8 @@ To get your user ID (needed to pull down information for the correct account):
 * Once signed in, click on the "My Profile" link
 * The User ID is a number in the URL, between 'profiles/' and '/overview'.
 
+Alternatively:
+* Head to https://www.kudosprime.com/gts/stats.php?profile=search and enter your PSN ID.
+* The number you need is the Profile ID near the bottom; alternatively, it's also the number at the end of the URL, after "?profile=".
+
 Roadmap for future updates is in issues; feel free to add to it! The base version was hacked together in a few hours, more intended to be added Soon^TM.
