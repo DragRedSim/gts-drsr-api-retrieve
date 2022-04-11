@@ -1,0 +1,12 @@
+Example structure for the planned rewrite config files
+
+{
+	'user': {
+		'psn_id': 'PSN ID',
+		'gt_id_num': 1234567890,
+		'default_config': '-g GT7 -f -i 120'
+	},
+	'user': {
+		...
+	}
+}
