@@ -25,10 +25,10 @@ termsize = os.get_terminal_size().columns - 1
 def initConfig():
 	time.sleep(0)
 	#we'll need this later, just defining it as effectively a no-op for now
-	#TODO: handle username/ID lookup, default options string
+	#TODO: handle username/ID lookup, default options string, uuids for GT7
 
 def getUserIDFromTextName():
-	#TODO: if file gtsapi.ini exists, rename it to gtapi.ini
+	#TODO: if file gtsapi.ini exists, convert content to new format and remove old file
 	config.read('gtapi.ini')
 	username = str.lower(args.username)
 	if username in config.sections():
