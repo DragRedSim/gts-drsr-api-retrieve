@@ -16,6 +16,7 @@ parser.add_argument('-f', '--separate_files', default=False, action='store_true'
 parser.add_argument('-p', '--player_files', default=False, action='store_true', help='Store each player ID\'s files with a unique filename. Useful if you have a different account for championships and daily races.'
 parser.add_argument('-i', '--interval', default=60, type=int, help='Set the interval to update the values, in seconds. Defaults to 60. Minimum of 60 in order to avoid overloading the GT API and having requests refused.')
 parser.add_argument('-o', '--runonce', default=False, action='store_true', help='Run once and exit (default is to continue running and updating)')
+parser.add_argument('-d', '--save-default-options', default=False, action='store_true', help='Store default options for this username in the config file. To overwrite, just run again with the -d command as part of the new options string.')
 args = parser.parse_args()
 
 config = configparser.ConfigParser()
@@ -24,6 +25,7 @@ termsize = os.get_terminal_size().columns - 1
 def initConfig():
 	time.sleep(0)
 	#we'll need this later, just defining it as effectively a no-op for now
+	#TODO: handle username/ID lookup, default options string
 
 def getUserIDFromTextName():
 	#TODO: if file gtsapi.ini exists, rename it to gtapi.ini
@@ -121,9 +123,11 @@ while True:
 		else:
 			print('Updating in 1 second...'.ljust(termsize), end='\r')
 		time.sleep(1)
-					
-#mainLoop()
-#if args.runOnce == False:
-	#delay X seconds function (to be defined)
-#else break
+
+#initConfig()
+#while True:
+	#mainLoop()
+	#if args.runOnce == False:
+		#delay X seconds function (to be defined)
+	#else break
 	
