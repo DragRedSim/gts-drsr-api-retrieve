@@ -1,3 +1,8 @@
+# Deprecation Notice
+This project is being archived, due to the impending shutdown of the online service for GT Sport.
+Appropriate data was not exposed by the GT7 API to allow this to continue to function, modified or otherwise.
+The code will stay available for reference, just don't expect it to actually work for anything.
+
 # gts-drsr-api-retrieve
 Calls the public GT Sport API to get the latest DR and SR values for a streaming overlay.
 
